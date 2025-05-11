@@ -1,0 +1,120 @@
+:root {
+    --light-grey: rgb(192, 192, 192);
+    --dark-blue: rgb(1,1,23);
+    --btn-color: #f1be32;
+    --register-body: antiquewhite;
+
+}
+body{
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    width: 30%;
+}
+h1{
+    font-size: 2em;
+}
+
+/*input div*/
+.input-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 0;
+}
+input#cash{
+    padding: 0.5em;
+    text-align: right;
+}
+
+#purchase-btn{
+    background-color: var(--btn-color);
+    font-weight: 700;
+    width: 100px;
+    padding: 0.8em;
+    border-radius: 5px;
+}
+
+/*register display*/
+#register-display-container{
+    background-color: var(--register-body);
+    padding: 1px 10px;
+    text-align: right;
+    border-radius: 3px;
+    width: 200px;
+}
+#register-display{
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+#register-display-neck{
+    width: 30px;
+    height: 30px;
+    background-color: var(--register-body);
+    margin: 0 20px;
+}
+
+/*main register body*/
+#register-body{
+    display: flex;
+    background-color: var(--register-body);
+    border-radius: 3px;
+    padding: 10px;
+    width: 300px;
+    height: 210px;
+}
+section.register-btns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 1px;
+    gap: 2px;
+    margin: 5px 0px 0px 5px;
+}
+button.btn{
+    width: 10px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: black;
+}
+section#cash-in-drawer-display{
+    width: 70%;
+    height: 85%;
+    margin: 5px 25px;
+    background-color: var(--light-grey);
+    color: black;
+    padding: 10px 20px;
+}
+p.displayp{
+    margin : 0;
+    font-size: 0.9em;
+}
+
+/*cash drawer*/
+#drawer{    
+    margin: 3px 0;
+    width: 320px;
+    height: 30px;
+    background-color: var(--register-body);
+    border-radius: 3px;
+    padding: 15px 0;
+}
+#keyhole{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+    padding: 5px;
+    border-radius: 35px;
+}
